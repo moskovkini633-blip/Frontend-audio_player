@@ -1,0 +1,44 @@
+.favorite-button {
+  flex: 0 0 auto;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #b3b3b3;
+  box-shadow: none;
+}
+
+.favorite-button:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.08);
+  color: #1ed760;
+  transform: none;
+  box-shadow: none;
+}
+
+.favorite-button.active,
+.favorite-button.active:hover:not(:disabled) {
+  color: #1ed760;
+}
+
+.favorite-button.active:hover:not(:disabled) {
+  background: rgba(30, 215, 96, 0.14);
+}
+
+:root[data-theme='light'] .favorite-button {
+  color: #8a8f98;
+}
+
+:root[data-theme='light'] .favorite-button:hover:not(:disabled) {
+  background: rgba(17, 24, 39, 0.06);
+  color: #14833b;
+}
+
+:root[data-theme='light'] .favorite-button.active,
+:root[data-theme='light'] .favorite-button.active:hover:not(:disabled) {
+  color: #14833b;
+}
+
+:root[data-theme='light'] .favorite-button.active:hover:not(:disabled) {
+  background: rgba(20, 131, 59, 0.12);
+}
